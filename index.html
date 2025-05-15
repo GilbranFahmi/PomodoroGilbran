@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer Gilbran</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔁 Video Background -->
+  <div class="background">
+    <video id="rightVideo" autoplay loop muted playsinline>
+      <source src="b9f361db-db84-4029-8ac9-926d27633f0f.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- ⏱️ Timer Content -->
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">25:00</div>
+    <div>
+      <input type="number" id="minutesInput" min="1" max="60" value="25" />
+    </div>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- 🔊 Alarm dan Musik -->
+    <audio id="alarmSound" src="penjaga hati remix.mp3" preload="auto"></audio>
+
+    <!-- 3 Musik Acak -->
+    <audio id="song1" src="SteinsGate 0 - Lyraライア by Zwei.mp3" preload="auto"></audio>
+    <audio id="song2" src="SteinsGate 0 Episode 23 Ending Song  Gate of Steiner by Eri Sasaki.mp3" preload="auto"></audio>
+    <audio id="song3" src="SteinsGate Opening Theme - Hacking to the Gate (Full Version).mp3" preload="auto"></audio>
+  </div>
+
+  <!-- 🧠 Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
